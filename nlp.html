@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project NLP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="main-content">
+    <h1>Language Bridge</h1>
+
+  </section>
+  <section class="lanbridge" id="lanbridge">
+        <div class="lb-img">
+            <img src="img/lb1.png" alt="profile picture">
+        </div>
+        <div class="lb-text">
+            <h2>A<span>Customer Service System</span>using conversational IVR</h2>
+            <div class="more-lb">
+                <p>Our project aims to improve customer service booking system by using advanced speech recognition and natural language processing technologies. We convert the spoken input of user into speech and identify the key words from it, then generate an appropriate responses. Our system is designed to work with different dilects of malayalam.  </p>
+            </div>
+        </div>
+    </section>
+  <section>
+    
+
+    <!-- Project description goes here -->
+
+    <!-- Button to trigger login and comment form -->
+    <button class="post-comment-btn" onclick="showLogin()">Post Comment</button>
+
+    <div id="login-form" class="popup-form">
+        <button class="close-btn" onclick="closePopup('login-form')">X</button>
+        <h2>Login</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br>
+
+            <button class="log-btn" type="button" onclick="showCommentForm()">Login</button>
+        </form>
+    </div>
+    <div id="comment-form" class="popup-form">
+        <button class="close-btn" onclick="closePopup('login-form')">X</button>
+        <h2>Add a Comment</h2>
+        <form>
+            <label for="comment-text">Comment:</label>
+            <textarea id="comment-text" required></textarea><br>
+
+            <button class="sub-btn" type="button" onclick="submitComment()">Submit Comment</button>
+        </form>
+    </div>    
+  </section>
+
+
+    <script src="nlpscript.js"></script>
+</body>
+</html>
